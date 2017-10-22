@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Favorite</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark blue darken-4 ">
+    <div class="container">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">More Recipe</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto" style="width:100%;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                      <span class="fa fa-home" aria-hidden="true"></span>
+                      Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addRecipe.html">
+                      <span class="fa fa-plus" aria-hidden="true"></span>
+                      Add Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                      <span class="fa fa-user" arial-hidden="true"></span>
+                      Login/Register</a>
+                </li>
+
+
+            <!-- Links -->
+
+            <!-- Search form -->
+    <ul class="nav navbar-nav ml-auto">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </form>
+  </ul>
+</div>
+        <!-- Collapsible content -->
+
+    </div>
+</nav>
+</header>
+<main class="mt-5">
+  <!-- HOME SECTION -->
+
+
+        <!-- BREADCRUMB -->
+        <div class="container">
+            <nav class="breadcrumb">
+                <a class="breadcrumb-item" href="index.html">Home</a>
+                <span class="breadcrumb-item active">Favorites</span>
+            </nav>
+        </div>
+
+        <!-- MAIN SECTION -->
+        <section class="mt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="list-group mb-3">
+                            <li class="list-group-item active text-center"><h5>Valentine Ezeh</h5></li>
+                            <a href="myrecipe.html" class="list-group-item"><i class="fa fa-cutlery" aria-hidden="true"></i> My Recipes <span class="badge badge-pill badge-info float-right">2</span></a>
+                            <a href="favorite.html" class="list-group-item"><i class="fa fa-star" aria-hidden="true"></i> My Favourites <span class="badge badge-pill badge-info float-right">4</span></a>
+                            <a href="profile.html" class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a>
+                        </div>
+
+                        <!-- TOP RECIPE -->
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item active text-center"><h5>Top 3 Favorite Recipes</h5></li>
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><a href="#" class="mb-1"><strong>Egusi Recipe</strong></a></h5>
+                                    <small class="text-muted">7 days ago</small>
+                                </div>
+                                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime!</p>
+                            </div>
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><a href="#"><strong>Edikaikong Recipe</strong></a></h5>
+                                    <small class="text-muted">5 days ago</small>
+                                </div>
+                                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime!</p>
+                            </div>
+                            <div class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1"><a href="#"><strong>Bitter Leaf Soup Recipe</strong></a></h5>
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                                <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime!</p>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!-- FAVORITE CATALOG  Table-->
+                    <div class="col-md-8 md-4">
+                      <table class="table">
+                          <thead>
+                          <tr>
+                              <th>Title</th>
+                              <th>Favorite</th>
+
+                          </tr>
+                          </thead>
+                          <tbody>
+
+                              <tr>
+
+                                    <td><a href="myrecipe.html">Atama Soup Recipe</a></td>
+
+
+                                  <td>
+                                      <a href="#" class="btn-favorite"><span class="fa fa-star active"></span></a>
+                                  </td>
+                                  <td>September 12, 2017</td>
+                                  <td>
+                                      <form action="#" method="post" style="display: inline;">
+
+                                          <input type="hidden" name="recipe_id" value="recipe.id " />
+                                          <button type="submit" class="btn btn-danger btn-sm">
+                                              <span class="fa fa-remove"></span>&nbsp; Delete
+                                          </button>
+                                        </td>
+                                        </tr>
+                                <tr>
+
+                                  <td><a href="myrecipe.html">Banga Soup Recipe</a></td>
+
+
+                                <td>
+                                    <a href="#" class="btn-favorite"><span class="fa fa-star active"></span></a>
+                                </td>
+                                <td>October 12, 2017</td>
+                                <td>
+                                    <form action="#" method="post" style="display: inline;">
+                                        <!--{% csrf_token %}-->
+                                        <input type="hidden" name="recipe_id" value="recipe.id " />
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <span class="fa fa-remove"></span>&nbsp; Delete
+                                        </button>
+                                      </td>
+                                </tr>
+                                <tr>
+
+                                  <td><a href="myrecipe.html">Egusi Soup Recipe</a></td>
+
+
+                                <td>
+                                    <a href="#" class="btn-favorite"><span class="fa fa-star active"></span></a>
+                                </td>
+                                <td>October 12, 2017</td>
+                                <td>
+                                    <form action="#" method="post" style="display: inline;">
+
+                                        <input type="hidden" name="recipe_id" value="recipe.id " />
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <span class="fa fa-remove"></span>&nbsp; Delete
+                                        </button>
+                                      </td>
+                                </tr>
+                                <tr>
+
+                                  <td><a href="myrecipe.html">Edikaikong Soup Recipe</a></td>
+
+
+                                <td>
+                                    <a href="#" class="btn-favorite"><span class="fa fa-star active"></span></a>
+                                </td>
+                                <td>October 14, 2017</td>
+                                <td>
+                                    <form action="#" method="post" style="display: inline;">
+
+                                        <input type="hidden" name="recipe_id" value="recipe.id " />
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <span class="fa fa-remove"></span>&nbsp; Delete
+                                        </button>
+                                      </td>
+                                </tr>
+
+                    </div>
+            </div>
+
+        </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
